@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Aliyu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .resume-section { margin-bottom: 40px; }
+    .resume-section h2 {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .resume-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .resume-role { font-weight: 600; font-size: 1rem; }
+    .resume-date {
+      font-size: 0.8rem;
+      color: var(--mid-gray);
+      font-weight: 500;
+      white-space: nowrap;
+      padding-top: 2px;
+    }
+    .resume-item { margin-bottom: 24px; }
+    .print-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Aliyu.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-label">My CV</p>
+      <h1>Resume</h1>
+      <p style="max-width:540px; color:#555; margin-top:12px;">
+        A summary of my background, skills, and experience.
+      </p>
+    </div>
+  </div>
+
+  <section class="page-section">
+    <div class="container">
+
+      <!-- Print button -->
+      <div class="print-btn">
+        <button class="btn btn-outline" onclick="window.print()">🖨️ Print / Save PDF</button>
+      </div>
+
+      <!-- Header info -->
+      <div style="text-align:center; margin-bottom:48px;">
+        <h1 style="font-size:2rem; margin-bottom:8px;">Aliyu</h1>
+        <p style="color:#555; margin:0;">Web Developer &nbsp;·&nbsp; Nigeria</p>
+        <p style="margin-top:4px;">
+          <a href="mailto:aliyu@example.com">aliyu@example.com</a>
+          &nbsp;·&nbsp;
+          <a href="https://github.com" target="_blank">github.com/aliyu</a>
+        </p>
+      </div>
+
+      <!-- Summary -->
+      <div class="resume-section">
+        <h2>Professional Summary</h2>
+        <p>
+          Passionate and self-driven web developer with hands-on experience building
+          static websites using HTML5 and CSS3. Skilled in creating responsive layouts
+          with flexbox and grid, version control with Git, and deploying projects via Vercel.
+          Eager to learn, grow, and contribute to real-world web projects.
+        </p>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume-section">
+        <h2>Technical Skills</h2>
+        <div style="margin-top:4px;">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Flexbox</span>
+          <span class="tag">CSS Grid</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Vercel</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">JavaScript (beginner)</span>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-section">
+        <h2>Education</h2>
+        <div class="resume-item">
+          <div class="resume-row">
+            <div class="resume-role">Computer Science / IT Studies</div>
+            <div class="resume-date">2023 – Present</div>
+          </div>
+          <p style="margin-top:4px; color:#555; font-size:0.9rem;">Ongoing academic studies in computing and information technology.</p>
+        </div>
+        <div class="resume-item">
+          <div class="resume-row">
+            <div class="resume-role">Secondary School Certificate</div>
+            <div class="resume-date">2020 – 2022</div>
+          </div>
+          <p style="margin-top:4px; color:#555; font-size:0.9rem;">Completed with focus on sciences and mathematics.</p>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="resume-section">
+        <h2>Projects</h2>
+        <div class="resume-item">
+          <div class="resume-row">
+            <div class="resume-role">Personal Portfolio Website</div>
+            <div class="resume-date">2025</div>
+          </div>
+          <p style="margin-top:4px; color:#555; font-size:0.9rem;">
+            10-page portfolio site built with HTML & CSS. Deployed to Vercel via GitHub.
+            Features responsive layout, custom design system, and consistent navigation.
+          </p>
+        </div>
+        <div class="resume-item">
+          <div class="resume-row">
+            <div class="resume-role">Product Landing Page</div>
+            <div class="resume-date">2025</div>
+          </div>
+          <p style="margin-top:4px; color:#555; font-size:0.9rem;">
+            A responsive landing page built with CSS flexbox and media queries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="resume-section">
+        <h2>Certifications</h2>
+        <div class="resume-item">
+          <div class="resume-row">
+            <div class="resume-role">Responsive Web Design — freeCodeCamp</div>
+            <div class="resume-date">2025</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <p>© 2025 Aliyu. Built with HTML &amp; CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
