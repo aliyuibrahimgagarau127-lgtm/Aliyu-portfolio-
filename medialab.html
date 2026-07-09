@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Lab — Aliyu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ---- MEDIA LAB SPECIFIC STYLES ---- */
+    .media-module {
+      background: var(--off-white);
+      border: 1px solid var(--light-gray);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 40px;
+    }
+
+    .media-module h3 {
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+    }
+
+    .media-module .module-meta {
+      font-size: 0.8rem;
+      color: var(--mid-gray);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .media-module p {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .media-module video,
+    .media-module audio {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--light-gray);
+      background: #000;
+    }
+
+    .media-module audio {
+      background: transparent;
+    }
+
+    .media-module iframe {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--light-gray);
+      max-width: 100%;
+    }
+
+    .module-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+
+    .media-type-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 99px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .badge-video { background: #fef3c7; color: #92400e; }
+    .badge-audio { background: #ede9fe; color: #5b21b6; }
+    .badge-youtube { background: #fee2e2; color: #991b1b; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Aliyu.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="medialab.html" class="active">Media Lab</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <p class="section-label">Modules</p>
+      <h1>Media Lab</h1>
+      <p style="max-width:560px; color:#555; margin-top:12px;">
+        A collection of media modules — videos, audio, and embedded content
+        that showcase how different media types work on the web.
+      </p>
+    </div>
+  </div>
+
+  <section class="page-section">
+    <div class="container">
+
+      <!-- MODULE 1 — Intro Video -->
+      <div class="media-module">
+        <div class="module-number">1</div>
+        <div class="module-meta">
+          Module 1 · Video
+          <span class="media-type-badge badge-video">📹 MP4 Video</span>
+        </div>
+        <h3>Introduction Video</h3>
+        <p>
+          A personal introduction video. This demonstrates how the HTML
+          <code>&lt;video&gt;</code> tag is used to embed and play local video
+          files directly inside a web page, with built-in player controls.
+        </p>
+        <video controls>
+          <source src="demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p style="margin-top:12px; font-size:0.8rem; color:var(--mid-gray);">
+          💡 <strong>HTML used:</strong> <code>&lt;video controls&gt;&lt;source src="demo.mp4" type="video/mp4" /&gt;&lt;/video&gt;</code>
+        </p>
+      </div>
+
+      <!-- MODULE 2 — Audio -->
+      <div class="media-module">
+        <div class="module-number">2</div>
+        <div class="module-meta">
+          Module 2 · Audio
+          <span class="media-type-badge badge-audio">🎙️ MP3 Audio</span>
+        </div>
+        <h3>Audio Introduction</h3>
+        <p>
+          A short audio message. This demonstrates how the HTML
+          <code>&lt;audio&gt;</code> tag embeds and plays sound files
+          in a browser with a simple, accessible player.
+        </p>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p style="margin-top:12px; font-size:0.8rem; color:var(--mid-gray);">
+          💡 <strong>HTML used:</strong> <code>&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg" /&gt;&lt;/audio&gt;</code>
+        </p>
+      </div>
+
+      <!-- MODULE 3 — YouTube Embed -->
+      <div class="media-module">
+        <div class="module-number">3</div>
+        <div class="module-meta">
+          Module 3 · Embedded YouTube
+          <span class="media-type-badge badge-youtube">▶️ YouTube</span>
+        </div>
+        <h3>A Short YouTube Video Shows You How to Embed Videos and Playlists</h3>
+        <p>
+          A short YouTube video shows how to embed videos and playlists to
+          websites or blogs. This uses an <code>&lt;iframe&gt;</code> tag to load
+          an external YouTube video directly inside the page.
+        </p>
+        <iframe
+          src="https://www.youtube.com/embed/lJIrF4YjHfQ"
+          height="380"
+          allowfullscreen
+          title="How to Embed YouTube Videos and Playlists"
+          loading="lazy"
+        ></iframe>
+        <p style="margin-top:12px; font-size:0.8rem; color:var(--mid-gray);">
+          💡 <strong>HTML used:</strong> <code>&lt;iframe src="https://www.youtube.com/embed/lJIrF4YjHfQ" allowfullscreen&gt;&lt;/iframe&gt;</code>
+        </p>
+      </div>
+
+      <!-- MODULE 4 — Google Map -->
+      <div class="media-module">
+        <div class="module-number">4</div>
+        <div class="module-meta">
+          Module 4 · Embedded Map
+          <span class="media-type-badge badge-youtube">🗺️ Google Maps</span>
+        </div>
+        <h3>📍 My Location — Kano, Nigeria</h3>
+        <p>
+          This demonstrates how to embed a Google Map using an
+          <code>&lt;iframe&gt;</code> tag. Maps can be embedded on any web page
+          to show a location to your visitors.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125822.44058612722!2d8.4665!3d12.0022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae8282654a5f07%3A0x67901e5c10d83a77!2sKano%2C%20Kano%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng"
+          width="100%"
+          height="380"
+          style="border:1px solid var(--light-gray); border-radius:var(--radius); display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Aliyu's Location — Kano, Nigeria"
+        ></iframe>
+        <p style="margin-top:12px; font-size:0.8rem; color:var(--mid-gray);">
+          💡 <strong>HTML used:</strong> <code>&lt;iframe src="https://www.google.com/maps/embed?..." allowfullscreen&gt;&lt;/iframe&gt;</code>
+        </p>
+      </div>
+
+      <!-- Summary Card -->
+      <div class="card" style="margin-top:8px;">
+        <h3>🧠 What You Learned in This Lab</h3>
+        <p>This Media Lab demonstrates three key HTML media elements:</p>
+        <div style="margin-top:4px;">
+          <span class="tag">📹 &lt;video&gt; tag</span>
+          <span class="tag">🎙️ &lt;audio&gt; tag</span>
+          <span class="tag">🖼️ &lt;iframe&gt; tag</span>
+          <span class="tag">🗺️ Google Maps</span>
+          <span class="tag">controls attribute</span>
+          <span class="tag">src attribute</span>
+          <span class="tag">allowfullscreen</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="medialab.html">Media Lab</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+      <p>© 2026 Aliyu. Built with HTML &amp; CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
